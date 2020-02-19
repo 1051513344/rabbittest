@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  rabbitmq:
+    host: 101.16.36.124
+    username: guest
+    password: guest
+    port: 3046
+queue:
+  video_queue: dev_video_consult_apply
+  tw_queue: dev_tw_consult_apply
+  ds_queue: dev_ds_consult_apply
+  jianGuan:
+    consult_apply: jian_guan_hlwyy_consult_apply
+    consult_diagose: jian_guan_hlwyy_consult_diagose
+
+  immediate_queue: immediate_queue
+  immediate_exchange: immediate_exchange
+  immediate_routing_key: immediate_routing_key
+  pay_task_queue: pay_task_queue
+  dead_letter_exchange: dead_letter_exchange
+  delay_routing_key: delay_routing_key
+  pay_remind_queue: pay_remind_queue
+  delay_remind_key: delay_remind_key
